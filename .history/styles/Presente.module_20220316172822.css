@@ -1,0 +1,14 @@
+.presente {
+  display: flex;
+}
+
+.topo {
+  width: 100px;
+  height: 25px;
+  background-color: #7aa944;
+}
+
+.corpo {
+  width: 90px;
+  height: 60px;
+}
