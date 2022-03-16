@@ -6,8 +6,6 @@ export default function Home() {
     <div style={{display: "flex"}}>
       <Porta selecionada/>
       <Porta/>
-      <Porta selecionada/>
-      <Porta/>
     </div>
   )
 }

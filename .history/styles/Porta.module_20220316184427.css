@@ -51,11 +51,3 @@
   border-right: 5px solid yellow;
   border-top: 5px solid yellow;
 }
-
-.selecionada .numero {
-  color: yellow;
-}
-
-.selecionada .macaneta {
-  background-color: yellow;
-}
