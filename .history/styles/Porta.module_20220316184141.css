@@ -32,8 +32,9 @@
 
 .macaneta {
   position: absolute;
+  display: flex;
   align-self: flex-start;
-  top: calc(0.45 * 315px);
+  top: 140px;
   height: 20px;
   width: 20px;
   border-radius: 10px;
