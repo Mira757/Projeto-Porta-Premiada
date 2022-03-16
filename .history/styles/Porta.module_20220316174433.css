@@ -1,0 +1,11 @@
+.porta {
+  display: flex;
+  flex-direction: column;
+
+  /* Temporario */
+  width: 200px;
+  height: 310px;
+}
+
+.numero {
+}
