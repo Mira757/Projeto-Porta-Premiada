@@ -1,10 +1,8 @@
 .area {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 200px;
   height: 315px;
-  margin: 5px;
 }
 
 .estrutura {
