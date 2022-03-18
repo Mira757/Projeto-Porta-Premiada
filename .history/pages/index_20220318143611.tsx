@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Porta from "../components/Porta";
-import { atualizarPortas, criarPortas } from "../functions/portas";
+import { criarPortas } from "../functions/portas";
 import PortaModel from "../model/porta";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
 
   function renderizarPortas() {
     return portas.map(porta => {
-      return <Porta key={porta.numero} value={porta} onChange={novaporta => atualizarPortas(portas, novaPorta)}/>
+      return <Porta key={porta.numero} value={porta} onChange={console.log}/>
     })
   }
   
