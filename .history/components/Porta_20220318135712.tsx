@@ -9,9 +9,8 @@ interface PortaProps {
 export default function Porta(props: PortaProps) {
 
   const  porta  = props.value
-  const selecionada = porta.selecionada && !porta.aberta ? styles.selecionada : ''
+  const selecionada = porta.selecionada ? styles.selecionada : ''
 
-  const alterarSelecao = e => props.onChange(porta.alterarSelecao())
   const abrir = e => {
     e.stopPropagation()
     props.onChange(porta.abrir())
@@ -19,19 +18,19 @@ export default function Porta(props: PortaProps) {
 
   function renderizarPorta() {
     return (
-      <div className={styles.porta}>
+      <div className={`${styles.estrutura} ${selecionada}`}>
+        <div className={styles.porta}>
           <div className={styles.numero}>{porta.numero}</div>
           <div className={styles.macaneta} onClick={abrir} ></div>
           
         </div>
+      </div>
     )
   }
-  
+
   return (
     <div className={styles.area} onClick={alterarSelecao}>
-      <div className={`${styles.estrutura} ${selecionada}`}>
       {porta.aberta ? false : renderizarPorta()}
-      </div>
       <div className={styles.chao}></div>
     </div>
   )
