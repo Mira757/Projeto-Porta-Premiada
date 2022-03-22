@@ -1,6 +1,5 @@
 import styles from "../styles/Formulario.module.css"
 import Cartao from "../components/Cartao"
-import Link from "next/link"
 
 export default function Formulario () {
   return (
@@ -11,11 +10,7 @@ export default function Formulario () {
     </div>
     <div>
       <Cartao></Cartao>
-      <Cartao bgcolor="#28a025">
-        <Link href={`/jogo/4/2`}>
-          <h2 className={styles.link}>Iniciar</h2>
-        </Link>
-      </Cartao>
+      <Cartao bgcolor="#28a025"></Cartao>
     </div>
     </div>
   )

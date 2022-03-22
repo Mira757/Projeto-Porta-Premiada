@@ -13,7 +13,7 @@ export default function Formulario () {
       <Cartao></Cartao>
       <Cartao bgcolor="#28a025">
         <Link href={`/jogo/4/2`}>
-          <h2 className={styles.link}>Iniciar</h2>
+          <h2 className={syles.link}>Iniciar</h2>
         </Link>
       </Cartao>
     </div>
