@@ -14,7 +14,7 @@ export function atualizarPortas(portas: PortaModel[], portaModificada: PortaMode
     if (igualModificada) {
       return portaModificada
     } else {
-      return portaModificada.aberta ? portaAtual : portaAtual.desmarcar()
+      return portaModificada.aberta ? portaAtual.desmarcar()
     }
   })
 }
