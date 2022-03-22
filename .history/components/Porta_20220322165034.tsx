@@ -31,7 +31,7 @@ export default function Porta(props: PortaProps) {
   return (
     <div className={styles.area} onClick={alterarSelecao}>
       <div className={`${styles.estrutura} ${selecionada}`}>
-      {porta.fechada ? renderizarPorta() : porta.temPresente ? <Presente></Presente> : false}
+      {porta.fechada ? renderizarPorta() : porta.temPresente ? <Presente></Presente>}
       </div>
       <div className={styles.chao}></div>
     </div>
