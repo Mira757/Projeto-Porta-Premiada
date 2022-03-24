@@ -28,7 +28,7 @@ export default function jogo () {
   }, [router?.query])
 
   function renderizarPortas() {
-    return portas.map(porta => {
+    return valido && portas.map(porta => {
       return <Porta key={porta.numero} value={porta} onChange={novaporta => setPortas(atualizarPortas(portas, novaporta))}/>
     })
   }
@@ -36,7 +36,7 @@ export default function jogo () {
   return (
     <div id={styles.jogo}>
       <div className={styles.portas}>
-        {valido ? renderizarPortas() : <h1>Valores Invalidos</h1>}
+        {renderizarPortas()}
       </div>
       <div className={styles.botoes}>
         <Link href={"/"}>

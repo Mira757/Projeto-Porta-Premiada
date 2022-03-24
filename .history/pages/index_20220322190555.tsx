@@ -19,10 +19,10 @@ export default function Formulario () {
     </div>
     <div>
       <Cartao>
-      <EntradaNumerica text="Porta com Presente" value={comPresente} onChange={novaPortaComPresente => setcomPresente(novaPortaComPresente)}/>
+      <EntradaNumerica text="Porta com Presente" value={qtdePortas} onChange={novaQtde => setQtdePortas(novaQtde)}/>
       </Cartao>
       <Cartao bgcolor="#28a025">
-        <Link href={`/jogo/${qtdePortas}/${comPresente}`}>
+        <Link href={`/jogo/4/2`}>
           <h2 className={styles.link}>Iniciar</h2>
         </Link>
       </Cartao>

@@ -7,7 +7,6 @@ import { useState } from "react"
 export default function Formulario () {
 
   const [qtdePortas,setQtdePortas] = useState(3)
-  const [comPresente,setcomPresente] = useState(1)
 
   return (
     <div className={styles.formulario}>
@@ -19,10 +18,10 @@ export default function Formulario () {
     </div>
     <div>
       <Cartao>
-      <EntradaNumerica text="Porta com Presente" value={comPresente} onChange={novaPortaComPresente => setcomPresente(novaPortaComPresente)}/>
+      <EntradaNumerica text="Quantidade de Portas" value={qtdePortas} onChange={novaQtde => setQtdePortas(novaQtde)}/>
       </Cartao>
       <Cartao bgcolor="#28a025">
-        <Link href={`/jogo/${qtdePortas}/${comPresente}`}>
+        <Link href={`/jogo/4/2`}>
           <h2 className={styles.link}>Iniciar</h2>
         </Link>
       </Cartao>
