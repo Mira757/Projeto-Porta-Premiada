@@ -5,7 +5,7 @@ import { atualizarPortas, criarPortas } from "../../../functions/portas";
 import Link from "next/link"
 import { useRouter } from "next/router"
 
-export default function Jogo () {
+export default function jogo () {
   const router = useRouter()
 
   const [portas,setPortas] = useState([])
@@ -39,7 +39,7 @@ export default function Jogo () {
         {valido ? renderizarPortas() : <h1>Valores Invalidos</h1>}
       </div>
       <div className={styles.botoes}>
-        <Link href={"/"} passHref>
+        <Link href={"/"}>
           <button>Reiniciar</button>
         </Link>
       </div>
